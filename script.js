@@ -4,6 +4,11 @@ function changeColour(colour) {
     square.style.background = colour;
 }
 
+function clicked() {
+    var msg = "Build a<br>" +createBuzzwordPhrase();
+    words.innerHTML = msg;
+}
+
 square.addEventListener('click', (event) => changeColour ('green'));
 
 /* create hover effect */
@@ -31,5 +36,5 @@ function createBuzzwordPhrase() {
     return  buzz[idx_buz] + " " + action[idx_act] + " " + outcome[idx_out];
 }
 
-console.log( createBuzzwordPhrase() )
+console.log(createBuzzwordPhrase())
 
