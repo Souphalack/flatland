@@ -10,6 +10,13 @@ square.addEventListener('click', (event) => changeColour ('green'));
 square.addEventListener('mouseover', (event) => changeColour('grey'));
 square.addEventListener ('mouseout', (event) => changeColour('red'));
 
+var words = document.getElementById('words');
+
+function greeting(){
+    words.innerHTML = "Welcome to Flatland <br> I am Square!"
+}
+
+document.onload = greeting()
 
 function createBuzzwordPhrase() {
     /* See https://en.wikipedia.org/wiki/List_of_buzzwords */
